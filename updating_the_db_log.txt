@@ -820,3 +820,38 @@ Campo 'entities_processed' popolato in 10 documenti.
 Chunking ed embedding completati per 10 documenti.
 [19/06/2025 10:34:36,43] Pipeline completata con successo 
 ================================================== 
+[20/06/2025 10:30:02,20] Inizio esecuzione pipeline 
+[20/06/2025 10:30:02,32] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 68551c286201fcf073e59a76
+ - 68551c296201fcf073e59a77
+ - 68551c2a6201fcf073e59a78
+ - 68551c2b6201fcf073e59a79
+ - 68551c2b6201fcf073e59a7a
+ - 68551c2c6201fcf073e59a7b
+ - 68551c2c6201fcf073e59a7c
+ - 68551c2d6201fcf073e59a7d
+ - 68551c2d6201fcf073e59a7e
+ - 68551c2e6201fcf073e59a7f
+[20/06/2025 10:30:02,32] Esecuzione 4_clean_text.py 
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]Pulizia testo:  10%|#         | 1/10 [00:00<00:03,  2.93doc/s]Pulizia testo:  30%|###       | 3/10 [00:00<00:00,  7.18doc/s]Pulizia testo:  50%|#####     | 5/10 [00:00<00:00,  8.69doc/s]Pulizia testo:  70%|#######   | 7/10 [00:00<00:00,  8.88doc/s]Pulizia testo:  80%|########  | 8/10 [00:01<00:00,  7.30doc/s]Pulizia testo:  90%|######### | 9/10 [00:01<00:00,  7.77doc/s]Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  7.83doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[20/06/2025 10:30:02,32] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:04,  1.86doc/s]Creazione delle sintesi:  20%|##        | 2/10 [00:00<00:02,  3.42doc/s]Creazione delle sintesi:  40%|####      | 4/10 [00:00<00:00,  6.16doc/s]Creazione delle sintesi:  60%|######    | 6/10 [00:01<00:00,  7.14doc/s]Creazione delle sintesi:  70%|#######   | 7/10 [00:01<00:00,  6.46doc/s]Creazione delle sintesi:  90%|######### | 9/10 [00:01<00:00,  8.24doc/s]Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  6.76doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[20/06/2025 10:30:02,32] Esecuzione 6_NER.py 
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]Processing documents:  10%|#         | 1/10 [00:04<00:36,  4.01s/it]Processing documents:  30%|###       | 3/10 [00:05<00:10,  1.48s/it]Processing documents:  50%|#####     | 5/10 [00:05<00:04,  1.11it/s]Processing documents:  60%|######    | 6/10 [00:07<00:04,  1.00s/it]Processing documents:  70%|#######   | 7/10 [00:08<00:03,  1.11s/it]Processing documents:  80%|########  | 8/10 [00:09<00:02,  1.17s/it]Processing documents:  90%|######### | 9/10 [00:10<00:01,  1.03s/it]Processing documents: 100%|##########| 10/10 [00:11<00:00,  1.06it/s]Processing documents: 100%|##########| 10/10 [00:11<00:00,  1.13s/it]
+Campo 'entities_processed' popolato in 10 documenti.
+[20/06/2025 10:30:02,32] Esecuzione 7_chunk_and_embed.py 
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]Chunking and embedding:  10%|#         | 1/10 [00:21<03:10, 21.13s/doc]Chunking and embedding:  20%|##        | 2/10 [00:26<01:34, 11.81s/doc]Chunking and embedding:  30%|###       | 3/10 [00:30<00:57,  8.26s/doc]Chunking and embedding:  40%|####      | 4/10 [00:39<00:51,  8.53s/doc]Chunking and embedding:  50%|#####     | 5/10 [00:43<00:34,  6.88s/doc]Chunking and embedding:  60%|######    | 6/10 [00:46<00:22,  5.56s/doc]Chunking and embedding:  70%|#######   | 7/10 [00:49<00:14,  4.87s/doc]Chunking and embedding:  80%|########  | 8/10 [00:51<00:07,  3.75s/doc]Chunking and embedding:  90%|######### | 9/10 [00:52<00:02,  2.86s/doc]Chunking and embedding: 100%|##########| 10/10 [00:53<00:00,  2.29s/doc]Chunking and embedding: 100%|##########| 10/10 [00:53<00:00,  5.31s/doc]
+Chunking ed embedding completati per 10 documenti.
+[20/06/2025 10:35:15,11] Pipeline completata con successo 
+================================================== 

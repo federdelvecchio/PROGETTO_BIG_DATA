@@ -94,3 +94,9 @@ Documenti eliminati (testo < 50 caratteri): 0
 Documenti aggiornati: 10
 Errori: 0
 Tempo impiegato: 1.74 secondi
+LOG PULIZIA (2025-06-20 10:30:52)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 1.40 secondi
