@@ -12,7 +12,7 @@ EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 # Elenco dei modelli LLM disponibili per il fact checking
 AVAILABLE_MODELS = {
-    "gemma-3-1b-it (local)": "google/gemma-3-1b-it",
+    #"gemma-3-1b-it (local)": "google/gemma-3-1b-it",
     "gemini-2.0-flash (api)": "gemini-2.0-flash",
 }
 
@@ -68,7 +68,7 @@ def initialize_models():
 # Inizializzazione dei modelli all'avvio dell'applicazione
 models, device = initialize_models()
 
-@st.cache_data(ttl=3600, show_spinner=True)
+@st.cache_data(ttl=3600, show_spinner=False)
 def get_domain_rank_threshold():
     """
     Calcola la soglia del 75° percentile per il domain_rank degli articoli.
