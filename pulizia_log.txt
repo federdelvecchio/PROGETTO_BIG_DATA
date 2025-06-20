@@ -1,0 +1,96 @@
+LOG PULIZIA (2025-05-24 16:23:53)
+Documenti da processare: 81859
+Documenti eliminati (testo < 50 caratteri): 58
+Errori: 0
+Tempo impiegato: 4643.77 secondi
+LOG PULIZIA (2025-05-31 10:13:38)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 2.67 secondi
+LOG PULIZIA (2025-06-02 10:30:39)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 3.51 secondi
+LOG PULIZIA (2025-06-06 12:15:58)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 2.50 secondi
+LOG PULIZIA (2025-06-08 13:20:58)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 1.27 secondi
+LOG PULIZIA (2025-06-09 10:31:00)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 0.99 secondi
+LOG PULIZIA (2025-06-10 16:04:48)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 1.26 secondi
+LOG PULIZIA (2025-06-11 10:30:56)
+Documenti da processare: 2
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 2
+Errori: 0
+Tempo impiegato: 0.84 secondi
+LOG PULIZIA (2025-06-12 10:30:55)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 1.77 secondi
+
+LOG PULIZIA (2025-06-13 10:30:51)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 1.67 secondi
+LOG PULIZIA (2025-06-14 10:31:04)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 1.12 secondi
+LOG PULIZIA (2025-06-15 10:30:47)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 0.99 secondi
+LOG PULIZIA (2025-06-16 10:30:57)
+Documenti da processare: 0
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 0
+Errori: 0
+Tempo impiegato: 0.28 secondi
+LOG PULIZIA (2025-06-17 10:30:37)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 1.15 secondi
+LOG PULIZIA (2025-06-18 10:31:11)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 6.18 secondi
+LOG PULIZIA (2025-06-19 10:30:55)
+Documenti da processare: 10
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti aggiornati: 10
+Errori: 0
+Tempo impiegato: 1.74 secondi

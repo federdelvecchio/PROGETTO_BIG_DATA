@@ -1,0 +1,822 @@
+[31/05/2025 10:13:16,04] Inizio esecuzione pipeline 
+[31/05/2025 10:13:16,05] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 683aba26f33c181f15fc6d52
+ - 683aba26f33c181f15fc6d53
+ - 683aba26f33c181f15fc6d54
+ - 683aba27f33c181f15fc6d55
+ - 683aba27f33c181f15fc6d56
+ - 683aba28f33c181f15fc6d57
+ - 683aba28f33c181f15fc6d58
+ - 683aba29f33c181f15fc6d59
+ - 683aba29f33c181f15fc6d5a
+ - 683aba2af33c181f15fc6d5b
+[31/05/2025 10:13:16,05] Esecuzione 4_clean_text.py 
+
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]
+Pulizia testo:  10%|#         | 1/10 [00:00<00:05,  1.79doc/s]
+Pulizia testo:  20%|##        | 2/10 [00:01<00:05,  1.51doc/s]
+Pulizia testo:  30%|###       | 3/10 [00:01<00:02,  2.39doc/s]
+Pulizia testo:  40%|####      | 4/10 [00:01<00:01,  3.22doc/s]
+Pulizia testo:  50%|#####     | 5/10 [00:01<00:01,  4.02doc/s]
+Pulizia testo:  60%|######    | 6/10 [00:01<00:00,  4.49doc/s]
+Pulizia testo:  70%|#######   | 7/10 [00:02<00:00,  4.62doc/s]
+Pulizia testo:  80%|########  | 8/10 [00:02<00:00,  5.22doc/s]
+Pulizia testo:  90%|######### | 9/10 [00:02<00:00,  5.57doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:02<00:00,  5.04doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:02<00:00,  3.83doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[31/05/2025 10:13:16,05] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]
+Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:08,  1.01doc/s]
+Creazione delle sintesi:  20%|##        | 2/10 [00:01<00:04,  1.93doc/s]
+Creazione delle sintesi:  30%|###       | 3/10 [00:01<00:02,  2.69doc/s]
+Creazione delle sintesi:  40%|####      | 4/10 [00:01<00:01,  3.50doc/s]
+Creazione delle sintesi:  50%|#####     | 5/10 [00:01<00:01,  3.58doc/s]
+Creazione delle sintesi:  60%|######    | 6/10 [00:02<00:01,  3.94doc/s]
+Creazione delle sintesi:  70%|#######   | 7/10 [00:02<00:00,  4.45doc/s]
+Creazione delle sintesi:  80%|########  | 8/10 [00:02<00:00,  4.23doc/s]
+Creazione delle sintesi:  90%|######### | 9/10 [00:02<00:00,  4.55doc/s]
+Creazione delle sintesi: 100%|##########| 10/10 [00:02<00:00,  4.69doc/s]
+Creazione delle sintesi: 100%|##########| 10/10 [00:02<00:00,  3.56doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[31/05/2025 10:13:16,05] Esecuzione 6_NER.py 
+
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]
+Processing documents:  10%|#         | 1/10 [00:02<00:21,  2.44s/it]
+Processing documents:  20%|##        | 2/10 [00:02<00:10,  1.26s/it]
+Processing documents:  30%|###       | 3/10 [00:03<00:05,  1.18it/s]
+Processing documents:  40%|####      | 4/10 [00:03<00:03,  1.57it/s]
+Processing documents:  50%|#####     | 5/10 [00:03<00:02,  2.22it/s]
+Processing documents:  70%|#######   | 7/10 [00:04<00:01,  2.29it/s]
+Processing documents:  80%|########  | 8/10 [00:04<00:00,  2.48it/s]
+Processing documents:  90%|######### | 9/10 [00:05<00:00,  2.51it/s]
+Processing documents: 100%|##########| 10/10 [00:05<00:00,  2.49it/s]
+Processing documents: 100%|##########| 10/10 [00:05<00:00,  1.78it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[31/05/2025 10:13:16,05] Esecuzione 7_chunk_and_embed.py 
+
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]
+Chunking and embedding:  10%|#         | 1/10 [00:03<00:30,  3.38s/doc]
+Chunking and embedding:  20%|##        | 2/10 [00:06<00:24,  3.01s/doc]
+Chunking and embedding:  30%|###       | 3/10 [00:07<00:16,  2.41s/doc]
+Chunking and embedding:  40%|####      | 4/10 [00:09<00:12,  2.15s/doc]
+Chunking and embedding:  50%|#####     | 5/10 [00:11<00:09,  1.91s/doc]
+Chunking and embedding:  60%|######    | 6/10 [00:12<00:06,  1.72s/doc]
+Chunking and embedding:  70%|#######   | 7/10 [00:15<00:06,  2.22s/doc]
+Chunking and embedding:  80%|########  | 8/10 [00:17<00:04,  2.02s/doc]
+Chunking and embedding:  90%|######### | 9/10 [00:18<00:01,  1.91s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:20<00:00,  1.86s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:20<00:00,  2.07s/doc]
+Chunking ed embedding completati per 10 documenti.
+[31/05/2025 10:15:48,27] Pipeline completata con successo 
+================================================== 
+[02/06/2025 10:30:00,36] Inizio esecuzione pipeline 
+[02/06/2025 10:30:00,38] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 683d61151c73c8cb1a111d72
+ - 683d61161c73c8cb1a111d73
+ - 683d61161c73c8cb1a111d74
+ - 683d61171c73c8cb1a111d75
+ - 683d61171c73c8cb1a111d76
+ - 683d61181c73c8cb1a111d77
+ - 683d61191c73c8cb1a111d78
+ - 683d61191c73c8cb1a111d79
+ - 683d611a1c73c8cb1a111d7a
+ - 683d611b1c73c8cb1a111d7b
+[02/06/2025 10:30:00,38] Esecuzione 4_clean_text.py 
+
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]
+Pulizia testo:  10%|#         | 1/10 [00:01<00:08,  1.00doc/s]
+Pulizia testo:  20%|##        | 2/10 [00:01<00:04,  1.92doc/s]
+Pulizia testo:  30%|###       | 3/10 [00:01<00:03,  1.90doc/s]
+Pulizia testo:  40%|####      | 4/10 [00:01<00:02,  2.35doc/s]
+Pulizia testo:  50%|#####     | 5/10 [00:02<00:01,  2.60doc/s]
+Pulizia testo:  60%|######    | 6/10 [00:02<00:01,  3.33doc/s]
+Pulizia testo:  70%|#######   | 7/10 [00:02<00:00,  3.82doc/s]
+Pulizia testo:  90%|######### | 9/10 [00:02<00:00,  4.45doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:03<00:00,  3.25doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[02/06/2025 10:30:00,38] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]
+Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:06,  1.38doc/s]
+Creazione delle sintesi:  30%|###       | 3/10 [00:00<00:01,  3.88doc/s]
+Creazione delle sintesi:  50%|#####     | 5/10 [00:01<00:00,  5.25doc/s]
+Creazione delle sintesi:  60%|######    | 6/10 [00:01<00:00,  5.92doc/s]
+Creazione delle sintesi:  70%|#######   | 7/10 [00:01<00:00,  6.01doc/s]
+Creazione delle sintesi:  90%|######### | 9/10 [00:01<00:00,  7.38doc/s]
+Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  5.82doc/s]
+Campo 'summary' aggiunto a 10 documenti. 
+[02/06/2025 11:34:17,28] Esecuzione 6_NER.py 
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]
+Processing documents:  20%|##        | 2/10 [00:00<00:00, 13.23it/s]
+Processing documents:  40%|####      | 4/10 [00:03<00:06,  1.06s/it]
+Processing documents:  50%|#####     | 5/10 [00:04<00:04,  1.07it/s]
+Processing documents:  60%|######    | 6/10 [00:04<00:03,  1.21it/s]
+Processing documents:  70%|#######   | 7/10 [00:05<00:02,  1.31it/s]
+Processing documents:  80%|########  | 8/10 [00:05<00:01,  1.54it/s]
+Processing documents:  90%|######### | 9/10 [00:06<00:00,  1.50it/s]
+Processing documents: 100%|##########| 10/10 [00:06<00:00,  1.68it/s]
+Processing documents: 100%|##########| 10/10 [00:06<00:00,  1.43it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[02/06/2025 11:34:17,28] Esecuzione 7_chunk_and_embed.py 
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]
+Chunking and embedding:  10%|#         | 1/10 [00:02<00:25,  2.85s/doc]
+Chunking and embedding:  20%|##        | 2/10 [00:04<00:19,  2.39s/doc]
+Chunking and embedding:  30%|###       | 3/10 [00:06<00:15,  2.20s/doc]
+Chunking and embedding:  40%|####      | 4/10 [00:08<00:11,  1.88s/doc]
+Chunking and embedding:  50%|#####     | 5/10 [00:09<00:08,  1.61s/doc]
+Chunking and embedding:  60%|######    | 6/10 [00:10<00:05,  1.43s/doc]
+Chunking and embedding:  70%|#######   | 7/10 [00:11<00:04,  1.37s/doc]
+Chunking and embedding:  80%|########  | 8/10 [00:12<00:02,  1.26s/doc]
+Chunking and embedding:  90%|######### | 9/10 [00:14<00:01,  1.31s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:15<00:00,  1.19s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:15<00:00,  1.51s/doc]
+Chunking ed embedding completati per 10 documenti.
+[02/06/2025 11:35:53,42] Pipeline completata con successo 
+================================================== 
+[06/06/2025 12:14:33,36] Inizio esecuzione pipeline 
+[06/06/2025 12:14:33,52] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 6842bfaef1769abfc1acd0c1
+ - 6842bfb1f1769abfc1acd0c2
+ - 6842bfb2f1769abfc1acd0c3
+ - 6842bfb4f1769abfc1acd0c4
+ - 6842bfb6f1769abfc1acd0c5
+ - 6842bfb8f1769abfc1acd0c6
+ - 6842bfb9f1769abfc1acd0c7
+ - 6842bfbbf1769abfc1acd0c8
+ - 6842bfbdf1769abfc1acd0c9
+ - 6842bfbff1769abfc1acd0ca
+[06/06/2025 12:14:33,52] Esecuzione 4_clean_text.py 
+
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]
+Pulizia testo:  10%|#         | 1/10 [00:00<00:05,  1.71doc/s]
+Pulizia testo:  20%|##        | 2/10 [00:00<00:03,  2.61doc/s]
+Pulizia testo:  30%|###       | 3/10 [00:01<00:02,  3.01doc/s]
+Pulizia testo:  40%|####      | 4/10 [00:01<00:01,  3.61doc/s]
+Pulizia testo:  50%|#####     | 5/10 [00:01<00:01,  4.21doc/s]
+Pulizia testo:  60%|######    | 6/10 [00:01<00:01,  3.78doc/s]
+Pulizia testo:  70%|#######   | 7/10 [00:02<00:00,  3.98doc/s]
+Pulizia testo:  80%|########  | 8/10 [00:02<00:00,  4.74doc/s]
+Pulizia testo:  90%|######### | 9/10 [00:02<00:00,  5.24doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:02<00:00,  6.10doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:02<00:00,  4.21doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[06/06/2025 12:14:33,52] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]
+Creazione delle sintesi:  10%|#         | 1/10 [00:01<00:12,  1.41s/doc]
+Creazione delle sintesi:  20%|##        | 2/10 [00:01<00:05,  1.47doc/s]
+Creazione delle sintesi:  30%|###       | 3/10 [00:01<00:03,  2.00doc/s]
+Creazione delle sintesi:  40%|####      | 4/10 [00:01<00:02,  2.89doc/s]
+Creazione delle sintesi:  50%|#####     | 5/10 [00:02<00:01,  3.61doc/s]
+Creazione delle sintesi:  60%|######    | 6/10 [00:02<00:00,  4.13doc/s]
+Creazione delle sintesi:  70%|#######   | 7/10 [00:02<00:00,  4.00doc/s]
+Creazione delle sintesi:  80%|########  | 8/10 [00:02<00:00,  4.84doc/s]
+Creazione delle sintesi:  90%|######### | 9/10 [00:02<00:00,  5.72doc/s]
+Creazione delle sintesi: 100%|##########| 10/10 [00:02<00:00,  6.11doc/s]
+Creazione delle sintesi: 100%|##########| 10/10 [00:02<00:00,  3.42doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[06/06/2025 12:14:33,52] Esecuzione 6_NER.py 
+
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]
+Processing documents:  20%|##        | 2/10 [00:00<00:00, 12.31it/s]
+Processing documents:  40%|####      | 4/10 [00:08<00:15,  2.55s/it]
+Processing documents:  50%|#####     | 5/10 [00:09<00:10,  2.11s/it]
+Processing documents:  60%|######    | 6/10 [00:11<00:08,  2.02s/it]
+Processing documents:  70%|#######   | 7/10 [00:13<00:05,  1.99s/it]
+Processing documents:  80%|########  | 8/10 [00:14<00:03,  1.71s/it]
+Processing documents:  90%|######### | 9/10 [00:15<00:01,  1.47s/it]
+Processing documents: 100%|##########| 10/10 [00:16<00:00,  1.30s/it]
+Processing documents: 100%|##########| 10/10 [00:16<00:00,  1.64s/it]
+Campo 'entities_processed' popolato in 10 documenti.
+[06/06/2025 12:14:33,52] Esecuzione 7_chunk_and_embed.py 
+
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]
+Chunking and embedding:  10%|#         | 1/10 [00:09<01:24,  9.34s/doc]
+Chunking and embedding:  20%|##        | 2/10 [00:16<01:06,  8.35s/doc]
+Chunking and embedding:  30%|###       | 3/10 [00:23<00:52,  7.53s/doc]
+Chunking and embedding:  40%|####      | 4/10 [00:27<00:37,  6.26s/doc]
+Chunking and embedding:  50%|#####     | 5/10 [00:32<00:28,  5.73s/doc]
+Chunking and embedding:  60%|######    | 6/10 [00:38<00:23,  5.86s/doc]
+Chunking and embedding:  70%|#######   | 7/10 [00:44<00:17,  5.83s/doc]
+Chunking and embedding:  80%|########  | 8/10 [00:48<00:10,  5.29s/doc]
+Chunking and embedding:  90%|######### | 9/10 [00:52<00:04,  4.79s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:55<00:00,  4.34s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:55<00:00,  5.57s/doc]
+Chunking ed embedding completati per 10 documenti.
+[06/06/2025 12:22:24,23] Pipeline completata con successo 
+[08/06/2025 13:19:58,00] Inizio esecuzione pipeline 
+[08/06/2025 13:19:58,32] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 684571fa06ce8f2beefb7845
+ - 684571fa06ce8f2beefb7846
+ - 684571fa06ce8f2beefb7847
+ - 684571fb06ce8f2beefb7848
+ - 684571fb06ce8f2beefb7849
+ - 684571fb06ce8f2beefb784a
+ - 684571fb06ce8f2beefb784b
+ - 684571fc06ce8f2beefb784c
+ - 684571fc06ce8f2beefb784d
+ - 684571fc06ce8f2beefb784e
+[08/06/2025 13:19:58,32] Esecuzione 4_clean_text.py 
+
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]
+Pulizia testo:  10%|#         | 1/10 [00:00<00:03,  2.58doc/s]
+Pulizia testo:  30%|###       | 3/10 [00:00<00:01,  5.87doc/s]
+Pulizia testo:  40%|####      | 4/10 [00:00<00:00,  6.61doc/s]
+Pulizia testo:  60%|######    | 6/10 [00:00<00:00,  8.65doc/s]
+Pulizia testo:  80%|########  | 8/10 [00:00<00:00, 10.46doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:01<00:00, 11.09doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  8.71doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[08/06/2025 13:19:58,32] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]
+Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:04,  1.84doc/s]
+Creazione delle sintesi:  30%|###       | 3/10 [00:00<00:01,  5.05doc/s]
+Creazione delle sintesi:  50%|#####     | 5/10 [00:00<00:00,  7.48doc/s]
+Creazione delle sintesi:  70%|#######   | 7/10 [00:00<00:00,  9.28doc/s]
+Creazione delle sintesi:  90%|######### | 9/10 [00:01<00:00,  9.94doc/s]
+Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  8.22doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[08/06/2025 13:19:58,32] Esecuzione 6_NER.py 
+
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]
+Processing documents:  10%|#         | 1/10 [00:08<01:15,  8.37s/it]
+Processing documents:  20%|##        | 2/10 [00:09<00:31,  3.88s/it]
+Processing documents:  30%|###       | 3/10 [00:10<00:20,  2.91s/it]
+Processing documents:  40%|####      | 4/10 [00:12<00:14,  2.34s/it]
+Processing documents:  50%|#####     | 5/10 [00:12<00:08,  1.71s/it]
+Processing documents:  60%|######    | 6/10 [00:13<00:05,  1.34s/it]
+Processing documents:  70%|#######   | 7/10 [00:14<00:03,  1.08s/it]
+Processing documents:  80%|########  | 8/10 [00:15<00:02,  1.21s/it]
+Processing documents:  90%|######### | 9/10 [00:19<00:01,  1.93s/it]
+Processing documents: 100%|##########| 10/10 [00:19<00:00,  1.55s/it]
+Processing documents: 100%|##########| 10/10 [00:19<00:00,  1.98s/it]
+Campo 'entities_processed' popolato in 10 documenti.
+[08/06/2025 13:19:58,32] Esecuzione 7_chunk_and_embed.py 
+
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]
+Chunking and embedding:  10%|#         | 1/10 [00:02<00:20,  2.26s/doc]
+Chunking and embedding:  20%|##        | 2/10 [00:03<00:13,  1.70s/doc]
+Chunking and embedding:  30%|###       | 3/10 [00:05<00:12,  1.84s/doc]
+Chunking and embedding:  40%|####      | 4/10 [00:07<00:10,  1.73s/doc]
+Chunking and embedding:  50%|#####     | 5/10 [00:08<00:07,  1.53s/doc]
+Chunking and embedding:  60%|######    | 6/10 [00:09<00:05,  1.38s/doc]
+Chunking and embedding:  70%|#######   | 7/10 [00:10<00:03,  1.23s/doc]
+Chunking and embedding:  80%|########  | 8/10 [00:12<00:02,  1.45s/doc]
+Chunking and embedding:  90%|######### | 9/10 [00:13<00:01,  1.51s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:14<00:00,  1.33s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:14<00:00,  1.48s/doc]
+Chunking ed embedding completati per 10 documenti.
+[08/06/2025 13:28:06,64] Pipeline completata con successo 
+================================================== 
+[09/06/2025 10:30:01,33] Inizio esecuzione pipeline 
+[09/06/2025 10:30:01,40] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 68469ba17db9016b73827341
+ - 68469ba27db9016b73827342
+ - 68469ba27db9016b73827343
+ - 68469ba27db9016b73827344
+ - 68469ba37db9016b73827345
+ - 68469ba37db9016b73827346
+ - 68469ba47db9016b73827347
+ - 68469ba47db9016b73827348
+ - 68469ba47db9016b73827349
+ - 68469ba57db9016b7382734a
+[09/06/2025 10:30:01,40] Esecuzione 4_clean_text.py 
+
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]
+Pulizia testo:  10%|#         | 1/10 [00:00<00:03,  2.57doc/s]
+Pulizia testo:  30%|###       | 3/10 [00:00<00:01,  6.98doc/s]
+Pulizia testo:  50%|#####     | 5/10 [00:00<00:00, 10.23doc/s]
+Pulizia testo:  70%|#######   | 7/10 [00:00<00:00, 11.24doc/s]
+Pulizia testo:  90%|######### | 9/10 [00:00<00:00, 13.02doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:00<00:00, 10.74doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[09/06/2025 10:30:01,40] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]
+Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:04,  1.95doc/s]
+Creazione delle sintesi:  40%|####      | 4/10 [00:00<00:00,  7.28doc/s]
+Creazione delle sintesi:  70%|#######   | 7/10 [00:00<00:00, 10.96doc/s]
+Creazione delle sintesi:  90%|######### | 9/10 [00:00<00:00, 12.85doc/s]
+Creazione delle sintesi: 100%|##########| 10/10 [00:00<00:00, 10.33doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[09/06/2025 10:30:01,40] Esecuzione 6_NER.py 
+
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]
+Processing documents:  10%|#         | 1/10 [00:01<00:16,  1.78s/it]
+Processing documents:  20%|##        | 2/10 [00:02<00:07,  1.14it/s]
+Processing documents:  60%|######    | 6/10 [00:02<00:01,  3.41it/s]
+Processing documents:  80%|########  | 8/10 [00:02<00:00,  3.81it/s]
+Processing documents:  90%|######### | 9/10 [00:03<00:00,  3.84it/s]
+Processing documents: 100%|##########| 10/10 [00:03<00:00,  3.85it/s]
+Processing documents: 100%|##########| 10/10 [00:03<00:00,  2.92it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[09/06/2025 10:30:01,40] Esecuzione 7_chunk_and_embed.py 
+
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]
+Chunking and embedding:  10%|#         | 1/10 [00:26<03:58, 26.46s/doc]
+Chunking and embedding:  20%|##        | 2/10 [00:28<01:35, 11.98s/doc]
+Chunking and embedding:  30%|###       | 3/10 [00:30<00:53,  7.63s/doc]
+Chunking and embedding:  40%|####      | 4/10 [00:32<00:31,  5.21s/doc]
+Chunking and embedding:  50%|#####     | 5/10 [00:33<00:19,  3.81s/doc]
+Chunking and embedding:  60%|######    | 6/10 [00:35<00:12,  3.08s/doc]
+Chunking and embedding:  70%|#######   | 7/10 [00:38<00:09,  3.05s/doc]
+Chunking and embedding:  80%|########  | 8/10 [00:39<00:04,  2.50s/doc]
+Chunking and embedding:  90%|######### | 9/10 [00:40<00:01,  1.99s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:41<00:00,  1.78s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:41<00:00,  4.17s/doc]
+Chunking ed embedding completati per 10 documenti.
+[09/06/2025 10:34:42,35] Pipeline completata con successo 
+================================================== 
+[10/06/2025 16:02:06,41] Inizio esecuzione pipeline 
+[10/06/2025 16:02:06,71] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 68483b559d5646b64f561e58
+ - 68483b559d5646b64f561e59
+ - 68483b559d5646b64f561e5a
+ - 68483b569d5646b64f561e5b
+ - 68483b569d5646b64f561e5c
+ - 68483b569d5646b64f561e5d
+ - 68483b579d5646b64f561e5e
+ - 68483b579d5646b64f561e5f
+ - 68483b579d5646b64f561e60
+ - 68483b579d5646b64f561e61
+[10/06/2025 16:02:06,71] Esecuzione 4_clean_text.py 
+
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]
+Pulizia testo:  10%|#         | 1/10 [00:00<00:03,  2.25doc/s]
+Pulizia testo:  30%|###       | 3/10 [00:00<00:01,  5.99doc/s]
+Pulizia testo:  50%|#####     | 5/10 [00:00<00:00,  8.58doc/s]
+Pulizia testo:  70%|#######   | 7/10 [00:00<00:00, 10.49doc/s]
+Pulizia testo:  90%|######### | 9/10 [00:00<00:00, 11.56doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  9.15doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[10/06/2025 16:02:06,71] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]
+Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:04,  1.87doc/s]
+Creazione delle sintesi:  30%|###       | 3/10 [00:00<00:01,  5.65doc/s]
+Creazione delle sintesi:  50%|#####     | 5/10 [00:00<00:00,  8.80doc/s]
+Creazione delle sintesi:  70%|#######   | 7/10 [00:00<00:00, 10.92doc/s]
+Creazione delle sintesi:  90%|######### | 9/10 [00:01<00:00, 11.71doc/s]
+Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  9.11doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[10/06/2025 16:02:06,71] Esecuzione 6_NER.py 
+
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]
+Processing documents:  10%|#         | 1/10 [00:02<00:22,  2.47s/it]
+Processing documents:  20%|##        | 2/10 [00:02<00:09,  1.15s/it]
+Processing documents:  30%|###       | 3/10 [00:03<00:05,  1.19it/s]
+Processing documents:  40%|####      | 4/10 [00:03<00:04,  1.49it/s]
+Processing documents:  60%|######    | 6/10 [00:04<00:01,  2.15it/s]
+Processing documents:  70%|#######   | 7/10 [00:04<00:01,  2.16it/s]
+Processing documents:  80%|########  | 8/10 [00:05<00:00,  2.18it/s]
+Processing documents: 100%|##########| 10/10 [00:05<00:00,  1.95it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[10/06/2025 16:02:06,71] Esecuzione 7_chunk_and_embed.py 
+
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]
+Chunking and embedding:  10%|#         | 1/10 [00:15<02:15, 15.02s/doc]
+Chunking and embedding:  20%|##        | 2/10 [00:16<00:56,  7.04s/doc]
+Chunking and embedding:  30%|###       | 3/10 [00:18<00:33,  4.75s/doc]
+Chunking and embedding:  40%|####      | 4/10 [00:20<00:20,  3.49s/doc]
+Chunking and embedding:  50%|#####     | 5/10 [00:21<00:14,  2.85s/doc]
+Chunking and embedding:  60%|######    | 6/10 [00:23<00:09,  2.43s/doc]
+Chunking and embedding:  70%|#######   | 7/10 [00:24<00:06,  2.13s/doc]
+Chunking and embedding:  80%|########  | 8/10 [00:26<00:03,  1.88s/doc]
+Chunking and embedding:  90%|######### | 9/10 [00:27<00:01,  1.66s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:30<00:00,  1.97s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:30<00:00,  3.01s/doc]
+Chunking ed embedding completati per 10 documenti.
+[10/06/2025 16:10:06,14] Pipeline completata con successo 
+================================================== 
+[11/06/2025 10:30:01,50] Inizio esecuzione pipeline 
+[11/06/2025 10:30:01,53] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+Errore durante l'esecuzione: E11000 duplicate key error collection: facts_db.articles index: url_1 dup key: { url: "https://www.foxnews.com/us/anti-ice-protesters-los-angeles-spit-burn-american-flag" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: facts_db.articles index: url_1 dup key: { url: "https://www.foxnews.com/us/anti-ice-protesters-los-angeles-spit-burn-american-flag" }', 'keyPattern': {'url': 1}, 'keyValue': {'url': 'https://www.foxnews.com/us/anti-ice-protesters-los-angeles-spit-burn-american-flag'}}
+[11/06/2025 10:30:01,53] Esecuzione 4_clean_text.py 
+
+Pulizia testo:   0%|          | 0/2 [00:00<?, ?doc/s]
+Pulizia testo:  50%|#####     | 1/2 [00:00<00:00,  2.59doc/s]
+Pulizia testo: 100%|##########| 2/2 [00:00<00:00,  4.14doc/s]
+Pulizia testo: 100%|##########| 2/2 [00:00<00:00,  3.80doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 2
+[11/06/2025 10:30:01,53] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+
+Creazione delle sintesi:   0%|          | 0/2 [00:00<?, ?doc/s]
+Creazione delle sintesi:  50%|#####     | 1/2 [00:00<00:00,  1.64doc/s]
+Creazione delle sintesi: 100%|##########| 2/2 [00:00<00:00,  3.15doc/s]
+Creazione delle sintesi: 100%|##########| 2/2 [00:00<00:00,  2.77doc/s]
+Campo 'summary' aggiunto a 2 documenti.
+[11/06/2025 10:30:01,53] Esecuzione 6_NER.py 
+
+Processing documents:   0%|          | 0/2 [00:00<?, ?it/s]
+Processing documents:  50%|#####     | 1/2 [00:02<00:02,  2.83s/it]
+Processing documents: 100%|##########| 2/2 [00:03<00:00,  1.58s/it]
+Processing documents: 100%|##########| 2/2 [00:03<00:00,  1.76s/it]
+Campo 'entities_processed' popolato in 2 documenti.
+[11/06/2025 10:30:01,53] Esecuzione 7_chunk_and_embed.py 
+
+Chunking and embedding:   0%|          | 0/2 [00:00<?, ?doc/s]
+Chunking and embedding:  50%|#####     | 1/2 [00:03<00:03,  3.93s/doc]
+Chunking and embedding: 100%|##########| 2/2 [00:05<00:00,  2.68s/doc]
+Chunking and embedding: 100%|##########| 2/2 [00:05<00:00,  2.87s/doc]
+Chunking ed embedding completati per 2 documenti.
+[11/06/2025 10:34:28,44] Pipeline completata con successo 
+================================================== 
+[12/06/2025 10:30:02,04] Inizio esecuzione pipeline 
+[12/06/2025 10:30:02,16] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 684a902116060f7f09e97632
+ - 684a902216060f7f09e97633
+ - 684a902216060f7f09e97634
+ - 684a902316060f7f09e97635
+ - 684a902416060f7f09e97636
+ - 684a902416060f7f09e97637
+ - 684a902516060f7f09e97638
+ - 684a902516060f7f09e97639
+ - 684a902616060f7f09e9763a
+ - 684a902716060f7f09e9763b
+[12/06/2025 10:30:02,16] Esecuzione 4_clean_text.py 
+
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]
+Pulizia testo:  10%|#         | 1/10 [00:00<00:04,  1.83doc/s]
+Pulizia testo:  20%|##        | 2/10 [00:00<00:02,  3.46doc/s]
+Pulizia testo:  30%|###       | 3/10 [00:00<00:01,  4.17doc/s]
+Pulizia testo:  40%|####      | 4/10 [00:00<00:01,  4.84doc/s]
+Pulizia testo:  60%|######    | 6/10 [00:01<00:00,  5.91doc/s]
+Pulizia testo:  80%|########  | 8/10 [00:01<00:00,  7.20doc/s]
+Pulizia testo:  90%|######### | 9/10 [00:01<00:00,  6.81doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  7.39doc/s]
+Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  5.76doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[12/06/2025 10:30:02,16] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]
+Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:06,  1.33doc/s]
+Creazione delle sintesi:  30%|###       | 3/10 [00:00<00:01,  3.72doc/s]
+Creazione delle sintesi:  50%|#####     | 5/10 [00:01<00:00,  5.74doc/s]
+Creazione delle sintesi:  60%|######    | 6/10 [00:01<00:00,  6.42doc/s]
+Creazione delle sintesi:  70%|#######   | 7/10 [00:01<00:00,  6.40doc/s]
+Creazione delle sintesi:  80%|########  | 8/10 [00:01<00:00,  7.09doc/s]
+Creazione delle sintesi:  90%|######### | 9/10 [00:01<00:00,  7.22doc/s]
+Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  7.43doc/s]
+Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  5.73doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[12/06/2025 10:30:02,16] Esecuzione 6_NER.py 
+
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]
+Processing documents:  10%|#         | 1/10 [00:03<00:28,  3.14s/it]
+Processing documents:  20%|##        | 2/10 [00:03<00:12,  1.61s/it]
+Processing documents:  30%|###       | 3/10 [00:04<00:07,  1.12s/it]
+Processing documents:  40%|####      | 4/10 [00:04<00:04,  1.22it/s]
+Processing documents:  60%|######    | 6/10 [00:05<00:02,  1.87it/s]
+Processing documents:  70%|#######   | 7/10 [00:05<00:01,  1.78it/s]
+Processing documents:  80%|########  | 8/10 [00:06<00:01,  1.74it/s]
+Processing documents:  90%|######### | 9/10 [00:07<00:00,  1.69it/s]
+Processing documents: 100%|##########| 10/10 [00:07<00:00,  1.41it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[12/06/2025 10:30:02,16] Esecuzione 7_chunk_and_embed.py 
+
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]
+Chunking and embedding:  10%|#         | 1/10 [00:03<00:33,  3.68s/doc]
+Chunking and embedding:  20%|##        | 2/10 [00:04<00:17,  2.20s/doc]
+Chunking and embedding:  30%|###       | 3/10 [00:05<00:11,  1.69s/doc]
+Chunking and embedding:  40%|####      | 4/10 [00:06<00:08,  1.39s/doc]
+Chunking and embedding:  50%|#####     | 5/10 [00:07<00:05,  1.17s/doc]
+Chunking and embedding:  60%|######    | 6/10 [00:08<00:04,  1.11s/doc]
+Chunking and embedding:  70%|#######   | 7/10 [00:09<00:03,  1.16s/doc]
+Chunking and embedding:  80%|########  | 8/10 [00:10<00:02,  1.13s/doc]
+Chunking and embedding:  90%|######### | 9/10 [00:12<00:01,  1.32s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:13<00:00,  1.30s/doc]
+Chunking and embedding: 100%|##########| 10/10 [00:13<00:00,  1.40s/doc]
+Chunking ed embedding completati per 10 documenti.
+[12/06/2025 10:35:18,52] Pipeline completata con successo 
+
+[13/06/2025 10:30:01,52] Inizio esecuzione pipeline 
+[13/06/2025 10:30:01,58] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 684be1a367f55a8094a59f3c
+ - 684be1a467f55a8094a59f3d
+ - 684be1a467f55a8094a59f3e
+ - 684be1a567f55a8094a59f3f
+ - 684be1a667f55a8094a59f40
+ - 684be1a667f55a8094a59f41
+ - 684be1a767f55a8094a59f42
+ - 684be1a767f55a8094a59f43
+ - 684be1a867f55a8094a59f44
+ - 684be1a867f55a8094a59f45
+[13/06/2025 10:30:01,58] Esecuzione 4_clean_text.py 
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]Pulizia testo:  10%|#         | 1/10 [00:00<00:04,  1.87doc/s]Pulizia testo:  20%|##        | 2/10 [00:00<00:02,  3.58doc/s]Pulizia testo:  40%|####      | 4/10 [00:00<00:01,  5.98doc/s]Pulizia testo:  50%|#####     | 5/10 [00:00<00:00,  6.09doc/s]Pulizia testo:  60%|######    | 6/10 [00:01<00:00,  6.46doc/s]Pulizia testo:  70%|#######   | 7/10 [00:01<00:00,  6.72doc/s]Pulizia testo:  80%|########  | 8/10 [00:01<00:00,  7.23doc/s]Pulizia testo:  90%|######### | 9/10 [00:01<00:00,  7.09doc/s]Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  7.67doc/s]Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  6.13doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[13/06/2025 10:30:01,58] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:05,  1.61doc/s]Creazione delle sintesi:  30%|###       | 3/10 [00:00<00:01,  4.38doc/s]Creazione delle sintesi:  50%|#####     | 5/10 [00:00<00:00,  6.31doc/s]Creazione delle sintesi:  70%|#######   | 7/10 [00:01<00:00,  7.53doc/s]Creazione delle sintesi:  90%|######### | 9/10 [00:01<00:00,  8.63doc/s]Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  6.93doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[13/06/2025 10:30:01,58] Esecuzione 6_NER.py 
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]Processing documents:  10%|#         | 1/10 [00:02<00:25,  2.78s/it]Processing documents:  20%|##        | 2/10 [00:03<00:11,  1.48s/it]Processing documents:  40%|####      | 4/10 [00:03<00:03,  1.66it/s]Processing documents:  60%|######    | 6/10 [00:04<00:01,  2.15it/s]Processing documents:  70%|#######   | 7/10 [00:04<00:01,  2.13it/s]Processing documents:  80%|########  | 8/10 [00:05<00:00,  2.09it/s]Processing documents: 100%|##########| 10/10 [00:05<00:00,  3.22it/s]Processing documents: 100%|##########| 10/10 [00:05<00:00,  1.89it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[13/06/2025 10:30:01,58] Esecuzione 7_chunk_and_embed.py 
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]Chunking and embedding:  10%|#         | 1/10 [00:03<00:33,  3.68s/doc]Chunking and embedding:  20%|##        | 2/10 [00:05<00:18,  2.36s/doc]Chunking and embedding:  30%|###       | 3/10 [00:06<00:12,  1.84s/doc]Chunking and embedding:  40%|####      | 4/10 [00:07<00:09,  1.55s/doc]Chunking and embedding:  50%|#####     | 5/10 [00:08<00:07,  1.42s/doc]Chunking and embedding:  60%|######    | 6/10 [00:09<00:05,  1.36s/doc]Chunking and embedding:  70%|#######   | 7/10 [00:11<00:04,  1.36s/doc]Chunking and embedding:  80%|########  | 8/10 [00:12<00:02,  1.32s/doc]Chunking and embedding:  90%|######### | 9/10 [00:13<00:01,  1.28s/doc]Chunking and embedding: 100%|##########| 10/10 [00:14<00:00,  1.29s/doc]Chunking and embedding: 100%|##########| 10/10 [00:14<00:00,  1.50s/doc]
+Chunking ed embedding completati per 10 documenti.
+[13/06/2025 10:34:21,43] Pipeline completata con successo 
+================================================== 
+[14/06/2025 10:30:01,81] Inizio esecuzione pipeline 
+[14/06/2025 10:30:01,89] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 684d333079b5f00340db4988
+ - 684d333079b5f00340db4989
+ - 684d333179b5f00340db498a
+ - 684d333279b5f00340db498b
+ - 684d333279b5f00340db498c
+ - 684d333379b5f00340db498d
+ - 684d333479b5f00340db498e
+ - 684d333479b5f00340db498f
+ - 684d333579b5f00340db4990
+ - 684d333579b5f00340db4991
+[14/06/2025 10:30:01,89] Esecuzione 4_clean_text.py 
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]Pulizia testo:  10%|#         | 1/10 [00:00<00:03,  2.84doc/s]Pulizia testo:  30%|###       | 3/10 [00:00<00:01,  6.53doc/s]Pulizia testo:  50%|#####     | 5/10 [00:00<00:00,  8.63doc/s]Pulizia testo:  70%|#######   | 7/10 [00:00<00:00, 10.43doc/s]Pulizia testo:  90%|######### | 9/10 [00:00<00:00, 10.83doc/s]Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  9.38doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[14/06/2025 10:30:01,89] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:04,  2.04doc/s]Creazione delle sintesi:  30%|###       | 3/10 [00:00<00:01,  5.50doc/s]Creazione delle sintesi:  50%|#####     | 5/10 [00:00<00:00,  6.74doc/s]Creazione delle sintesi:  70%|#######   | 7/10 [00:00<00:00,  9.07doc/s]Creazione delle sintesi:  90%|######### | 9/10 [00:01<00:00, 10.64doc/s]Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  8.43doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[14/06/2025 10:30:01,89] Esecuzione 6_NER.py 
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]Processing documents:  10%|#         | 1/10 [00:03<00:31,  3.52s/it]Processing documents:  20%|##        | 2/10 [00:04<00:14,  1.81s/it]Processing documents:  60%|######    | 6/10 [00:04<00:01,  2.27it/s]Processing documents:  80%|########  | 8/10 [00:04<00:00,  2.70it/s]Processing documents: 100%|##########| 10/10 [00:05<00:00,  3.02it/s]Processing documents: 100%|##########| 10/10 [00:05<00:00,  1.90it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[14/06/2025 10:30:01,89] Esecuzione 7_chunk_and_embed.py 
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]Chunking and embedding:  10%|#         | 1/10 [00:03<00:31,  3.52s/doc]Chunking and embedding:  20%|##        | 2/10 [00:04<00:16,  2.10s/doc]Chunking and embedding:  30%|###       | 3/10 [00:05<00:11,  1.68s/doc]Chunking and embedding:  40%|####      | 4/10 [00:06<00:08,  1.34s/doc]Chunking and embedding:  50%|#####     | 5/10 [00:07<00:06,  1.34s/doc]Chunking and embedding:  60%|######    | 6/10 [00:09<00:04,  1.24s/doc]Chunking and embedding:  70%|#######   | 7/10 [00:09<00:03,  1.09s/doc]Chunking and embedding:  80%|########  | 8/10 [00:10<00:02,  1.01s/doc]Chunking and embedding:  90%|######### | 9/10 [00:11<00:01,  1.00s/doc]Chunking and embedding: 100%|##########| 10/10 [00:12<00:00,  1.06doc/s]Chunking and embedding: 100%|##########| 10/10 [00:12<00:00,  1.24s/doc]
+Chunking ed embedding completati per 10 documenti.
+[14/06/2025 10:34:42,37] Pipeline completata con successo 
+================================================== 
+[15/06/2025 10:30:02,17] Inizio esecuzione pipeline 
+[15/06/2025 10:30:02,19] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 684e849ff77ff9c9dba3f74f
+ - 684e84a0f77ff9c9dba3f750
+ - 684e84a0f77ff9c9dba3f751
+ - 684e84a0f77ff9c9dba3f752
+ - 684e84a1f77ff9c9dba3f753
+ - 684e84a1f77ff9c9dba3f754
+ - 684e84a1f77ff9c9dba3f755
+ - 684e84a2f77ff9c9dba3f756
+ - 684e84a2f77ff9c9dba3f757
+ - 684e84a3f77ff9c9dba3f758
+[15/06/2025 10:30:02,19] Esecuzione 4_clean_text.py 
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]Pulizia testo:  10%|#         | 1/10 [00:00<00:02,  3.56doc/s]Pulizia testo:  20%|##        | 2/10 [00:00<00:01,  4.34doc/s]Pulizia testo:  40%|####      | 4/10 [00:00<00:00,  8.35doc/s]Pulizia testo:  60%|######    | 6/10 [00:00<00:00, 10.71doc/s]Pulizia testo:  80%|########  | 8/10 [00:00<00:00, 12.66doc/s]Pulizia testo: 100%|##########| 10/10 [00:00<00:00, 14.38doc/s]Pulizia testo: 100%|##########| 10/10 [00:00<00:00, 10.70doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[15/06/2025 10:30:02,19] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:03,  2.27doc/s]Creazione delle sintesi:  20%|##        | 2/10 [00:00<00:02,  3.68doc/s]Creazione delle sintesi:  50%|#####     | 5/10 [00:00<00:00,  8.76doc/s]Creazione delle sintesi:  70%|#######   | 7/10 [00:00<00:00, 10.53doc/s]Creazione delle sintesi:  90%|######### | 9/10 [00:00<00:00, 12.39doc/s]Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  9.45doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[15/06/2025 10:30:02,19] Esecuzione 6_NER.py 
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]Processing documents:  10%|#         | 1/10 [00:02<00:22,  2.48s/it]Processing documents:  20%|##        | 2/10 [00:05<00:20,  2.54s/it]Processing documents:  30%|###       | 3/10 [00:05<00:10,  1.50s/it]Processing documents:  40%|####      | 4/10 [00:05<00:06,  1.10s/it]Processing documents:  70%|#######   | 7/10 [00:06<00:01,  1.78it/s]Processing documents: 100%|##########| 10/10 [00:06<00:00,  2.72it/s]Processing documents: 100%|##########| 10/10 [00:06<00:00,  1.43it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[15/06/2025 10:30:02,19] Esecuzione 7_chunk_and_embed.py 
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]Chunking and embedding:  10%|#         | 1/10 [00:02<00:24,  2.75s/doc]Chunking and embedding:  20%|##        | 2/10 [00:06<00:26,  3.36s/doc]Chunking and embedding:  30%|###       | 3/10 [00:07<00:14,  2.05s/doc]Chunking and embedding:  40%|####      | 4/10 [00:07<00:09,  1.54s/doc]Chunking and embedding:  50%|#####     | 5/10 [00:08<00:06,  1.33s/doc]Chunking and embedding:  60%|######    | 6/10 [00:09<00:04,  1.15s/doc]Chunking and embedding:  70%|#######   | 7/10 [00:10<00:03,  1.09s/doc]Chunking and embedding:  80%|########  | 8/10 [00:10<00:01,  1.20doc/s]Chunking and embedding:  90%|######### | 9/10 [00:11<00:00,  1.19doc/s]Chunking and embedding: 100%|##########| 10/10 [00:12<00:00,  1.34doc/s]Chunking and embedding: 100%|##########| 10/10 [00:12<00:00,  1.22s/doc]
+Chunking ed embedding completati per 10 documenti.
+[15/06/2025 10:34:32,37] Pipeline completata con successo 
+================================================== 
+[16/06/2025 10:30:02,06] Inizio esecuzione pipeline 
+[16/06/2025 10:30:02,09] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+Errore durante l'esecuzione: E11000 duplicate key error collection: facts_db.articles index: url_1 dup key: { url: "https://www.cbsnews.com/news/erika-sandoval-trial-woman-fatally-shoots-ex-husband-as-he-sits-on-toilet" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: facts_db.articles index: url_1 dup key: { url: "https://www.cbsnews.com/news/erika-sandoval-trial-woman-fatally-shoots-ex-husband-as-he-sits-on-toilet" }', 'keyPattern': {'url': 1}, 'keyValue': {'url': 'https://www.cbsnews.com/news/erika-sandoval-trial-woman-fatally-shoots-ex-husband-as-he-sits-on-toilet'}}
+[16/06/2025 10:30:02,09] Esecuzione 4_clean_text.py 
+Pulizia testo: 0doc [00:00, ?doc/s]Pulizia testo: 0doc [00:00, ?doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 0
+[16/06/2025 10:30:02,09] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Creazione delle sintesi: 0doc [00:00, ?doc/s]Creazione delle sintesi: 0doc [00:00, ?doc/s]
+Campo 'summary' aggiunto a 0 documenti.
+[16/06/2025 10:30:02,09] Esecuzione 6_NER.py 
+Processing documents: 0it [00:00, ?it/s]Processing documents: 0it [00:00, ?it/s]
+Campo 'entities_processed' popolato in 0 documenti.
+[16/06/2025 10:30:02,09] Esecuzione 7_chunk_and_embed.py 
+Traceback (most recent call last):
+  File "E:\PROGETTO_BIG_DATA\7_chunk_and_embed.py", line 23, in <module>
+    client = MongoClient(MONGO_URI)
+  File "C:\Users\feffe\AppData\Roaming\Python\Python313\site-packages\pymongo\synchronous\mongo_client.py", line 884, in __init__
+    self._get_topology()  # type: ignore[unused-coroutine]
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\feffe\AppData\Roaming\Python\Python313\site-packages\pymongo\synchronous\mongo_client.py", line 1716, in _get_topology
+    self._resolve_srv()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\feffe\AppData\Roaming\Python\Python313\site-packages\pymongo\synchronous\mongo_client.py", line 903, in _resolve_srv
+    res = uri_parser._parse_srv(
+        entity,
+    ...<6 lines>...
+        srv_max_hosts=srv_max_hosts,
+    )
+  File "C:\Users\feffe\AppData\Roaming\Python\Python313\site-packages\pymongo\synchronous\uri_parser.py", line 163, in _parse_srv
+    nodes = dns_resolver.get_hosts()
+  File "C:\Users\feffe\AppData\Roaming\Python\Python313\site-packages\pymongo\synchronous\srv_resolver.py", line 155, in get_hosts
+    _, nodes = self._get_srv_response_and_hosts(True)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\feffe\AppData\Roaming\Python\Python313\site-packages\pymongo\synchronous\srv_resolver.py", line 130, in _get_srv_response_and_hosts
+    results = self._resolve_uri(encapsulate_errors)
+  File "C:\Users\feffe\AppData\Roaming\Python\Python313\site-packages\pymongo\synchronous\srv_resolver.py", line 124, in _resolve_uri
+    raise ConfigurationError(str(exc)) from None
+pymongo.errors.ConfigurationError: The resolution lifetime expired after 20.203 seconds: Server Do53:192.133.28.1@53 answered The DNS operation timed out.; Server Do53:192.133.28.7@53 answered The DNS operation timed out.; Server Do53:192.168.178.1@53 answered The DNS operation timed out.; Server Do53:192.168.145.99@53 answered The DNS operation timed out.; Server Do53:172.16.15.1@53 answered The DNS operation timed out.; Server Do53:192.133.28.1@53 answered The DNS operation timed out.; Server Do53:192.133.28.7@53 answered The DNS operation timed out.; Server Do53:192.168.178.1@53 answered The DNS operation timed out.; Server Do53:192.168.145.99@53 answered The DNS operation timed out.; Server Do53:172.16.15.1@53 answered The DNS operation timed out.
+[16/06/2025 10:30:02,09] Errore durante l'esecuzione di 7_chunk_and_embed.py 
+[17/06/2025 10:30:01,42] Inizio esecuzione pipeline 
+[17/06/2025 10:30:01,53] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 6851279ab2af3b0431205b57
+ - 6851279bb2af3b0431205b58
+ - 6851279bb2af3b0431205b59
+ - 6851279cb2af3b0431205b5a
+ - 6851279cb2af3b0431205b5b
+ - 6851279db2af3b0431205b5c
+ - 6851279db2af3b0431205b5d
+ - 6851279db2af3b0431205b5e
+ - 6851279eb2af3b0431205b5f
+ - 6851279fb2af3b0431205b60
+[17/06/2025 10:30:01,53] Esecuzione 4_clean_text.py 
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]Pulizia testo:  10%|#         | 1/10 [00:00<00:04,  2.15doc/s]Pulizia testo:  30%|###       | 3/10 [00:00<00:01,  5.48doc/s]Pulizia testo:  50%|#####     | 5/10 [00:00<00:00,  8.51doc/s]Pulizia testo:  70%|#######   | 7/10 [00:00<00:00, 10.47doc/s]Pulizia testo:  90%|######### | 9/10 [00:01<00:00, 11.33doc/s]Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  9.18doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[17/06/2025 10:30:01,53] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:05,  1.79doc/s]Creazione delle sintesi:  30%|###       | 3/10 [00:00<00:01,  5.34doc/s]Creazione delle sintesi:  60%|######    | 6/10 [00:01<00:00,  6.59doc/s]Creazione delle sintesi:  80%|########  | 8/10 [00:01<00:00,  8.13doc/s]Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  9.62doc/s]Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  7.43doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[17/06/2025 10:30:01,53] Esecuzione 6_NER.py 
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]Processing documents:  20%|##        | 2/10 [00:03<00:12,  1.62s/it]Processing documents:  30%|###       | 3/10 [00:03<00:07,  1.10s/it]Processing documents:  50%|#####     | 5/10 [00:03<00:03,  1.66it/s]Processing documents:  60%|######    | 6/10 [00:05<00:03,  1.17it/s]Processing documents:  80%|########  | 8/10 [00:05<00:01,  1.75it/s]Processing documents:  90%|######### | 9/10 [00:06<00:00,  2.07it/s]Processing documents: 100%|##########| 10/10 [00:06<00:00,  2.42it/s]Processing documents: 100%|##########| 10/10 [00:06<00:00,  1.58it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[17/06/2025 10:30:01,53] Esecuzione 7_chunk_and_embed.py 
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]Chunking and embedding:  10%|#         | 1/10 [00:04<00:38,  4.31s/doc]Chunking and embedding:  20%|##        | 2/10 [00:05<00:20,  2.57s/doc]Chunking and embedding:  30%|###       | 3/10 [00:07<00:14,  2.13s/doc]Chunking and embedding:  40%|####      | 4/10 [00:07<00:08,  1.35s/doc]Chunking and embedding:  50%|#####     | 5/10 [00:08<00:06,  1.40s/doc]Chunking and embedding:  60%|######    | 6/10 [00:11<00:07,  1.77s/doc]Chunking and embedding:  70%|#######   | 7/10 [00:12<00:04,  1.51s/doc]Chunking and embedding:  80%|########  | 8/10 [00:14<00:03,  1.69s/doc]Chunking and embedding:  90%|######### | 9/10 [00:15<00:01,  1.46s/doc]Chunking and embedding: 100%|##########| 10/10 [00:16<00:00,  1.37s/doc]Chunking and embedding: 100%|##########| 10/10 [00:16<00:00,  1.66s/doc]
+Chunking ed embedding completati per 10 documenti.
+[17/06/2025 10:34:18,89] Pipeline completata con successo 
+================================================== 
+[18/06/2025 10:30:01,97] Inizio esecuzione pipeline 
+[18/06/2025 10:30:02,00] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 68527929f7be4eae4b9baae2
+ - 6852792bf7be4eae4b9baae3
+ - 6852792bf7be4eae4b9baae4
+ - 6852792df7be4eae4b9baae5
+ - 6852792df7be4eae4b9baae6
+ - 6852792ef7be4eae4b9baae7
+ - 6852792ff7be4eae4b9baae8
+ - 68527930f7be4eae4b9baae9
+ - 68527931f7be4eae4b9baaea
+ - 68527932f7be4eae4b9baaeb
+[18/06/2025 10:30:02,00] Esecuzione 4_clean_text.py 
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]Pulizia testo:  10%|#         | 1/10 [00:02<00:20,  2.24s/doc]Pulizia testo:  20%|##        | 2/10 [00:02<00:08,  1.08s/doc]Pulizia testo:  30%|###       | 3/10 [00:02<00:04,  1.41doc/s]Pulizia testo:  40%|####      | 4/10 [00:03<00:03,  1.73doc/s]Pulizia testo:  50%|#####     | 5/10 [00:03<00:02,  1.83doc/s]Pulizia testo:  60%|######    | 6/10 [00:04<00:02,  1.90doc/s]Pulizia testo:  70%|#######   | 7/10 [00:04<00:01,  2.12doc/s]Pulizia testo:  80%|########  | 8/10 [00:05<00:01,  1.92doc/s]Pulizia testo:  90%|######### | 9/10 [00:05<00:00,  2.07doc/s]Pulizia testo: 100%|##########| 10/10 [00:06<00:00,  1.93doc/s]Pulizia testo: 100%|##########| 10/10 [00:06<00:00,  1.64doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[18/06/2025 10:30:02,00] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]Creazione delle sintesi:  10%|#         | 1/10 [00:01<00:09,  1.11s/doc]Creazione delle sintesi:  20%|##        | 2/10 [00:01<00:04,  1.85doc/s]Creazione delle sintesi:  30%|###       | 3/10 [00:01<00:03,  2.17doc/s]Creazione delle sintesi:  40%|####      | 4/10 [00:01<00:02,  2.76doc/s]Creazione delle sintesi:  50%|#####     | 5/10 [00:02<00:01,  3.04doc/s]Creazione delle sintesi:  60%|######    | 6/10 [00:02<00:01,  3.23doc/s]Creazione delle sintesi:  70%|#######   | 7/10 [00:02<00:00,  3.97doc/s]Creazione delle sintesi:  80%|########  | 8/10 [00:02<00:00,  4.72doc/s]Creazione delle sintesi:  90%|######### | 9/10 [00:02<00:00,  5.21doc/s]Creazione delle sintesi: 100%|##########| 10/10 [00:02<00:00,  5.91doc/s]Creazione delle sintesi: 100%|##########| 10/10 [00:02<00:00,  3.45doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[18/06/2025 10:30:02,00] Esecuzione 6_NER.py 
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]Processing documents:  10%|#         | 1/10 [00:02<00:20,  2.33s/it]Processing documents:  20%|##        | 2/10 [00:02<00:09,  1.16s/it]Processing documents:  30%|###       | 3/10 [00:03<00:05,  1.17it/s]Processing documents:  40%|####      | 4/10 [00:03<00:03,  1.51it/s]Processing documents:  60%|######    | 6/10 [00:05<00:03,  1.10it/s]Processing documents:  80%|########  | 8/10 [00:06<00:01,  1.41it/s]Processing documents: 100%|##########| 10/10 [00:07<00:00,  1.79it/s]Processing documents: 100%|##########| 10/10 [00:07<00:00,  1.37it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[18/06/2025 10:30:02,00] Esecuzione 7_chunk_and_embed.py 
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]Chunking and embedding:  10%|#         | 1/10 [00:04<00:36,  4.01s/doc]Chunking and embedding:  20%|##        | 2/10 [00:05<00:22,  2.75s/doc]Chunking and embedding:  30%|###       | 3/10 [00:08<00:19,  2.73s/doc]Chunking and embedding:  40%|####      | 4/10 [00:09<00:13,  2.18s/doc]Chunking and embedding:  50%|#####     | 5/10 [00:11<00:09,  1.90s/doc]Chunking and embedding:  60%|######    | 6/10 [00:14<00:08,  2.18s/doc]Chunking and embedding:  70%|#######   | 7/10 [00:17<00:07,  2.44s/doc]Chunking and embedding:  80%|########  | 8/10 [00:19<00:04,  2.30s/doc]Chunking and embedding:  90%|######### | 9/10 [00:19<00:01,  1.81s/doc]Chunking and embedding: 100%|##########| 10/10 [00:21<00:00,  1.70s/doc]Chunking and embedding: 100%|##########| 10/10 [00:21<00:00,  2.12s/doc]
+Chunking ed embedding completati per 10 documenti.
+[18/06/2025 10:35:10,34] Pipeline completata con successo 
+================================================== 
+[19/06/2025 10:30:01,65] Inizio esecuzione pipeline 
+[19/06/2025 10:30:01,69] Esecuzione 0_add_new_data.py 
+Articoli scaricati: 10
+ID degli articoli aggiunti:
+ - 6853caa366a683532887404b
+ - 6853caa466a683532887404c
+ - 6853caa566a683532887404d
+ - 6853caa666a683532887404e
+ - 6853caa766a683532887404f
+ - 6853caa766a6835328874050
+ - 6853caa866a6835328874051
+ - 6853caa966a6835328874052
+ - 6853caa966a6835328874053
+ - 6853caaa66a6835328874054
+[19/06/2025 10:30:01,69] Esecuzione 4_clean_text.py 
+Pulizia testo:   0%|          | 0/10 [00:00<?, ?doc/s]Pulizia testo:  10%|#         | 1/10 [00:00<00:04,  1.98doc/s]Pulizia testo:  20%|##        | 2/10 [00:00<00:02,  3.43doc/s]Pulizia testo:  30%|###       | 3/10 [00:00<00:01,  4.68doc/s]Pulizia testo:  40%|####      | 4/10 [00:00<00:01,  5.29doc/s]Pulizia testo:  50%|#####     | 5/10 [00:01<00:00,  6.26doc/s]Pulizia testo:  60%|######    | 6/10 [00:01<00:00,  6.26doc/s]Pulizia testo:  80%|########  | 8/10 [00:01<00:00,  7.70doc/s]Pulizia testo:  90%|######### | 9/10 [00:01<00:00,  7.24doc/s]Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  7.53doc/s]Pulizia testo: 100%|##########| 10/10 [00:01<00:00,  6.00doc/s]
+Documenti eliminati (testo < 50 caratteri): 0
+Documenti ripuliti: 10
+[19/06/2025 10:30:01,69] Esecuzione 5_summarization.py 
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\feffe\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Creazione delle sintesi:   0%|          | 0/10 [00:00<?, ?doc/s]Creazione delle sintesi:  10%|#         | 1/10 [00:00<00:05,  1.52doc/s]Creazione delle sintesi:  20%|##        | 2/10 [00:00<00:02,  3.02doc/s]Creazione delle sintesi:  30%|###       | 3/10 [00:00<00:01,  3.83doc/s]Creazione delle sintesi:  40%|####      | 4/10 [00:01<00:01,  4.22doc/s]Creazione delle sintesi:  60%|######    | 6/10 [00:01<00:00,  5.76doc/s]Creazione delle sintesi:  70%|#######   | 7/10 [00:01<00:00,  6.45doc/s]Creazione delle sintesi:  90%|######### | 9/10 [00:01<00:00,  7.84doc/s]Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  8.10doc/s]Creazione delle sintesi: 100%|##########| 10/10 [00:01<00:00,  5.63doc/s]
+Campo 'summary' aggiunto a 10 documenti.
+[19/06/2025 10:30:01,69] Esecuzione 6_NER.py 
+Processing documents:   0%|          | 0/10 [00:00<?, ?it/s]Processing documents:  10%|#         | 1/10 [00:02<00:20,  2.29s/it]Processing documents:  20%|##        | 2/10 [00:02<00:09,  1.20s/it]Processing documents:  40%|####      | 4/10 [00:03<00:03,  1.62it/s]Processing documents:  50%|#####     | 5/10 [00:03<00:02,  1.84it/s]Processing documents:  70%|#######   | 7/10 [00:04<00:01,  2.39it/s]Processing documents:  80%|########  | 8/10 [00:04<00:00,  2.60it/s]Processing documents:  90%|######### | 9/10 [00:04<00:00,  2.65it/s]Processing documents: 100%|##########| 10/10 [00:05<00:00,  2.69it/s]Processing documents: 100%|##########| 10/10 [00:05<00:00,  1.92it/s]
+Campo 'entities_processed' popolato in 10 documenti.
+[19/06/2025 10:30:01,69] Esecuzione 7_chunk_and_embed.py 
+Chunking and embedding:   0%|          | 0/10 [00:00<?, ?doc/s]Chunking and embedding:  10%|#         | 1/10 [00:02<00:24,  2.68s/doc]Chunking and embedding:  20%|##        | 2/10 [00:04<00:15,  1.89s/doc]Chunking and embedding:  30%|###       | 3/10 [00:06<00:13,  1.94s/doc]Chunking and embedding:  40%|####      | 4/10 [00:07<00:10,  1.80s/doc]Chunking and embedding:  50%|#####     | 5/10 [00:08<00:08,  1.62s/doc]Chunking and embedding:  60%|######    | 6/10 [00:10<00:06,  1.75s/doc]Chunking and embedding:  70%|#######   | 7/10 [00:12<00:04,  1.56s/doc]Chunking and embedding:  80%|########  | 8/10 [00:12<00:02,  1.33s/doc]Chunking and embedding:  90%|######### | 9/10 [00:14<00:01,  1.31s/doc]Chunking and embedding: 100%|##########| 10/10 [00:15<00:00,  1.21s/doc]Chunking and embedding: 100%|##########| 10/10 [00:15<00:00,  1.51s/doc]
+Chunking ed embedding completati per 10 documenti.
+[19/06/2025 10:34:36,43] Pipeline completata con successo 
+================================================== 
