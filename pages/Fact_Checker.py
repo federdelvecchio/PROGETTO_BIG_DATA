@@ -76,34 +76,47 @@ with col_btn:
 
 # Logica di esecuzione quando viene premuto il pulsante di verifica
 if check_pressed:
+    st.write("🚀 DEBUG: Pulsante Check Claim premuto")
     if claim:
+        st.write(f"📝 DEBUG: Claim ricevuto: '{claim[:100]}...'")
         with st.spinner("Checking claim...", show_time=True):
             # Recupera i chunk di testo rilevanti dal database
+            st.write("🔍 DEBUG: Avvio ricerca chunk...")
             search_results = search_chunks(claim, st_session=st.session_state)
+            st.write(f"📊 DEBUG: Ricerca completata, {len(search_results)} risultati trovati")
+            
             if search_results:
                 # Connessione al database MongoDB
+                st.write("🔗 DEBUG: Connessione al database per recupero articoli...")
                 client = MongoClient(MONGO_URI)
                 db = client[DB_NAME]
                 articles_col = db[COLLECTION_NAME]
 
                 # Genera la risposta utilizzando il modello LLM
+                st.write("🤖 DEBUG: Avvio generazione risposta LLM...")
                 llm_response = generate_llm_response(claim, search_results, selected_model)
+                st.write(f"✅ DEBUG: Risposta LLM generata, lunghezza: {len(str(llm_response))} caratteri")
                 
                 # Pulizia del testo della risposta
+                st.write("🧹 DEBUG: Pulizia risposta...")
                 answer_text = clean_answer(str(llm_response))
 
                 # Recupera i dati completi degli articoli dal database
                 article_ids = list(set([result["article_id"] for result in search_results]))
+                st.write(f"📋 DEBUG: Recupero dati per {len(article_ids)} articoli unici...")
                 articles_cursor = articles_col.find({"_id": {"$in": article_ids}})
                 articles_data = {article["_id"]: article for article in articles_cursor}
+                st.write(f"✅ DEBUG: Dati articoli recuperati: {len(articles_data)} articoli")
                 
                 # Prepara i dati per il report testuale
                 from datetime import datetime as dt
                 current_datetime = dt.now().strftime("%Y-%m-%d %H:%M:%S")
                 
                 # Calcola il punteggio di affidabilità del risultato
+                st.write("📊 DEBUG: Calcolo punteggio affidabilità...")
                 result_score = calculate_result_score(search_results)
                 score_percentage = int(result_score * 100)
+                st.write(f"🎯 DEBUG: Punteggio calcolato: {score_percentage}%")
                 
                 # Formatta il contenuto del report
                 txt_content = f"""FACT CHECK REPORT
@@ -118,22 +131,30 @@ RELIABILITY SCORE: {score_percentage}
 DATE/TIME: {current_datetime}
                 """
                 # Salva tutti i dati nella session_state per uso futuro
+                st.write("💾 DEBUG: Salvataggio dati in session_state...")
                 st.session_state['last_claim'] = claim
                 st.session_state['last_answer'] = answer_text
                 st.session_state['last_search_results'] = search_results
                 st.session_state['articles_data'] = articles_data
                 st.session_state['last_txt_data'] = txt_content.encode("utf-8")
+                st.write("✅ DEBUG: Tutti i dati salvati in session_state")
                 
                 client.close()
             else:
+                st.write("❌ DEBUG: Nessun articolo trovato per questo claim")
                 st.error("No articles found for this claim.")
+    else:
+        st.write("⚠️ DEBUG: Nessun claim inserito")
 
 # Visualizza i risultati se esistono nella session_state (anche dopo refresh)
 if 'last_claim' in st.session_state and 'last_answer' in st.session_state:
+    st.write("📋 DEBUG: Visualizzazione risultati da session_state...")
     claim = st.session_state['last_claim']
     answer_text = st.session_state['last_answer']
     search_results = st.session_state['last_search_results']
     articles_data = st.session_state.get('articles_data', {})
+    
+    st.write(f"📊 DEBUG: Visualizzazione - {len(search_results)} risultati di ricerca, {len(articles_data)} articoli")
     
     if search_results:
         # Calcola il punteggio di affidabilità
@@ -196,6 +217,8 @@ if 'last_claim' in st.session_state and 'last_answer' in st.session_state:
         
         # Definizione dei colori per i vari articoli
         bright_colors = ["#00E676", "#FF7043", "#29B6F6", "#AB47BC", "#FF4081", "#66BB6A", "#FFB300", "#FFD600"]
+
+        st.write(f"🎨 DEBUG: Visualizzazione articoli...")
 
         # Visualizza ogni articolo trovato
         for i, result in enumerate(search_results):
@@ -356,6 +379,8 @@ if 'last_claim' in st.session_state and 'last_answer' in st.session_state:
                         """, unsafe_allow_html=True
                     )
 
+        st.write(f"✅ DEBUG: Visualizzazione completata per {articles_shown_count} articoli")
+
         # Sezione per i pulsanti di download
         st.markdown("<div style='height: 2rem;'></div>", unsafe_allow_html=True)
         col1, col_center, col3 = st.columns([0.5, 2, 0.5])
@@ -377,6 +402,7 @@ if 'last_claim' in st.session_state and 'last_answer' in st.session_state:
             # Pulsante per scaricare i dati degli articoli in formato CSV
             with col_btn2:
                 if articles_data:
+                    st.write("📊 DEBUG: Preparazione CSV...")
                     # Prepara i dati per il CSV
                     csv_rows = []
                     for article_id, article in articles_data.items():
@@ -438,6 +464,7 @@ if 'last_claim' in st.session_state and 'last_answer' in st.session_state:
                     # Converte in DataFrame e poi in CSV
                     df_articles = pd.DataFrame(csv_rows)
                     csv_data = df_articles.to_csv(index=False, encoding='utf-8')
+                    st.write(f"✅ DEBUG: CSV preparato con {len(csv_rows)} righe")
                     
                     # Pulsante per il download del CSV
                     st.download_button(
@@ -451,6 +478,7 @@ if 'last_claim' in st.session_state and 'last_answer' in st.session_state:
 
     else:
         # Messaggio quando non vengono trovati articoli
+        st.write("⚠️ DEBUG: Nessun risultato di ricerca disponibile")
         st.markdown(
             """
             <div style="background: #4A90E2; border-radius: 8px; padding: 1rem; text-align: center;">
@@ -459,3 +487,5 @@ if 'last_claim' in st.session_state and 'last_answer' in st.session_state:
             </div>
             """, unsafe_allow_html=True
         )
+else:
+    st.write("📋 DEBUG: Nessun risultato precedente in session_state")
