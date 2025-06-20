@@ -5,6 +5,7 @@ from pymongo import MongoClient
 import streamlit as st
 import ast
 import google.generativeai as genai
+from huggingface_hub import login
 
 # Costanti per la configurazione del sistema
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
@@ -24,6 +25,7 @@ def initialize_models():
     Returns:
         tuple: (modelli caricati, dispositivo utilizzato)
     """
+    login(st.secrets["hugging_face_token"])
     models = {}
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
