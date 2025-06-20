@@ -12,8 +12,8 @@ EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 # Elenco dei modelli LLM disponibili per il fact checking
 AVAILABLE_MODELS = {
-    "gemma-3-1b-it (local)": "google/gemma-3-1b-it",
-    #"gemini-2.0-flash (api)": "gemini-2.0-flash",
+    #"gemma-3-1b-it (local)": "google/gemma-3-1b-it",
+    "gemini-2.0-flash (api)": "gemini-2.0-flash",
 }
 
 @st.cache_resource(show_spinner=True)
