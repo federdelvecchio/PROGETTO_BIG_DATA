@@ -68,7 +68,7 @@ def initialize_models():
 # Inizializzazione dei modelli all'avvio dell'applicazione
 models, device = initialize_models()
 
-@st.cache_data(ttl=3600, show_spinner=False)
+@st.cache_data(ttl=3600, show_spinner=True)
 def get_domain_rank_threshold():
     """
     Calcola la soglia del 75° percentile per il domain_rank degli articoli.
